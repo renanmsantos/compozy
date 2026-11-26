@@ -5,6 +5,41 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 0.7.9 - 2026-11-26
+
+### Bug Fixes
+
+- Accept workspace_id matcher for subagent hooks (#1950)
+- Coerce --input by declared Loop input type
+- Show needs-you on collapsed session folders (#1997)
+- Pass cloud environment secrets to the staging deploy (#1998)
+- Run cloud migrations as a non-superuser role (#1999)
+- Copy every cloud dependency into the cloud image (#2000)
+- Isolate tool provider failures from unrelated CompozyOS tools (#2003)
+- Accept boolean JSON subschemas and tuples in MCP tool schemas (#2001)
+- Launch the GitHub MCP server with its stdio subcommand (#2005)
+- Request resource-advertised offline_access and accept narrower MCP OAuth grants (#2008)
+- Route managed delegation through CompozyOS subagents (#2014)
+- Balance daemon integration shards using CI timings
+- Give daemon integration shards more headroom
+
+### Features
+
+- Let extensions declare min_compozy_version (#1952)
+- Offer spec_conductor delivery when cy-create-spec closes (#1937)
+- Allow fallback_chain in CompozyOS agent overrides (#1941)
+- Mark the open always-on agent on its row, seat and +N crew (#1938)
+- Support structured handoff and prior subagent linkage on delegation
+- Resolve loop inputs at fire time
+- Authored terminal status for gates and contract
+- Put running activity in the sidebar's leading column
+- Archive stopped session threads in one action
+- Let extension inputs reach the extension process and add setup
+- Require evidence-backed lessons on CompozyOS skill proposals
+- Let extensions declare and install experimental dependencies
+- Add Remote Computers, cloud hosting, and required sign-in (#1994)
+- Install CompozyOS skills through a crash-safe transaction (#1966)
+
 ## 0.7.8 - 2026-11-22
 
 ### Bug Fixes
@@ -843,7 +878,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Refactoring
 
-- Replace the in-repo prototype gallery with the Proto CLI (#1092)
+- Replace the in-repo prototype gallery with @compozy/proto (#1092)
 - Align @compozy/ui with the bnui contract (#1126)
 
 ### Testing
@@ -1836,6 +1871,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - _(repo)_ Many improvements
 - _(repo)_ Add cy prefix for skills and memory system
 
+[0.7.9]: https://github.com/compozy/compozy/compare/v0.7.8...v0.7.9
 [0.7.8]: https://github.com/compozy/compozy/compare/v0.7.7...v0.7.8
 [0.7.7]: https://github.com/compozy/compozy/compare/v0.7.6...v0.7.7
 [0.7.6]: https://github.com/compozy/compozy/compare/v0.7.5...v0.7.6
